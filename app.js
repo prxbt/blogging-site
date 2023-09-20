@@ -53,7 +53,7 @@ app.get('/posts/:postName', function(req, res) {
     }
   });
   if (flag === 0) {
-    res.status(404).render("No such post found");
+    res.send('<h1 style="color: red ;margin-left:30% ; margin-top:40vh; ">404 Page not found</h1>');
   }
 
 });
