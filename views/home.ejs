@@ -1,0 +1,36 @@
+<%- include('header.ejs') %>
+<div class="container">
+<h1>Home</h1>
+
+<% if(locals.startingContent) {%>
+
+<%= startingContent %>
+
+<% } %>
+
+<% if(locals.posts) {%>
+
+<% posts.forEach(function(post){ %>
+ <div class="card">
+ <h1><%= post.title %></h1>
+ <small><%= post.author %></small>
+ <small><%= post.time %></small>
+ <br>
+ <br>
+ <p>
+ <%= post.content.substring(0,200) %> ... 
+ <a href="/posts/<%= post.title %>">See More</a>
+ </p>
+    
+
+ </div>
+
+
+
+<%  }) %>
+<% } %>
+
+</div>
+
+
+<%- include('footer.ejs') %>

@@ -1,0 +1,11 @@
+<%- include('header.ejs') %>
+<div class="container">
+<h1>Contact</h1>
+<% if(locals.contactContent) {%>
+
+    <p><%= contactContent %></p>
+ 
+<% } %>
+</div>
+
+<%- include('footer.ejs') %>

@@ -1,0 +1,22 @@
+<%- include('header.ejs') %>
+
+<div class="container">
+<h1>Compose</h1>
+
+<div class="form-group">
+<form action="/compose" method="post">
+    <label for="">Title</label>
+    <br>
+    <input name="title" id="" class="form-control" ></input>
+    <br>
+    <label for="">Post</label>
+    <br>
+    <textarea name="post" id=""  rows="10" class="form-control"></textarea>
+    <br>
+    <button type="submit" name="button" class="btn btn-primary">Publish</button>
+</form>
+</div>
+
+</div>
+
+<%- include('footer.ejs') %>
