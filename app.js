@@ -28,7 +28,7 @@ app.get('/home', function(req, res) {
 );
 
 app.get('/about', function(req, res) {
-  console.log("about");
+  
   res.render("about.ejs", {aboutContent: aboutContent});
 });
 
@@ -59,7 +59,7 @@ app.get('/posts/:postName', function(req, res) {
 });
 
 app.post('/compose', function(req, res) {
-  console.log(req.body);
+ 
   const post={
     title: req.body.title ,
     content: req.body.post,
