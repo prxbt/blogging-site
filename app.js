@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import lodash from "lodash";
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb+srv://prxbt:<password>@cluster0.wm39i2o.mongodb.net/blogDB", {
+mongoose.connect("mongodb+srv://prxbt:test123@cluster0.wm39i2o.mongodb.net/blogDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
